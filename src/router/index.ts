@@ -1,11 +1,30 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
+import BussinessType from '../page/BussinessType.vue'
+import AboutCompany from '../page/AboutCompany.vue'
+import HeaderContainer from '../components/HeaderContainer.vue'
+import MisionVisionValue from '../page/MisionVisionValue.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
+    path: '/aboutCompany',
+    name: 'AboutCompany',
+    component: AboutCompany
+  },
+  {
+    path: '/headerContainer',
+    name: 'HeaderContainer',
+    component: HeaderContainer
+  },
+  {
+    path: '/misionVisionValue',
+    name: 'MisionVisionValue',
+    component: MisionVisionValue
+  },
+  {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'BussinessType',
+    component: BussinessType
   },
   {
     path: '/about',
